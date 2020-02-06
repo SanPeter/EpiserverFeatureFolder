@@ -10,5 +10,5 @@ namespace FeatureFolder.Features.Display
         public override string ChannelName { 
             get { return "mockup"; } 
         } 
-        public override bool IsActive(HttpContextBase context) { return context.Request.Browser.IsMobileDevice; } }
+        public override bool IsActive(HttpContextBase context) { return context.Request.Browser.IsMobileDevice || context.Request.QueryString["mockup"] == 1.ToString(); } }
 }

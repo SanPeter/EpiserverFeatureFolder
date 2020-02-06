@@ -19,7 +19,7 @@ namespace Features.Article
         }
     }
 
-    [TemplateDescriptor(Tags = new[] { "mockup" }, AvailableWithoutTag = false)]
+    //[TemplateDescriptor(Tags = new[] { "mockup" }, AvailableWithoutTag = false)]
     public class MockupArticlePageController : PageController<ArticlePage>
     {
         public ActionResult Index(ArticlePage currentPage)
